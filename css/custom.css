@@ -1,0 +1,202 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Hanlding Updates
+-----------------------------------------------------------------*/
+
+@font-face {
+	font-family: 'TT Norms Pro';
+	src: url('../fontes/tt-norms-pro-light.otf') format('otf'),
+		url('../fontes/tt-norms-pro-light.otf') format('otf');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+  }
+  
+  @font-face {
+	font-family: 'TT Norms Pro';
+	src: url('../fontes/tt-norms-pro-medium.otf') format('otf'),
+		url('../fontes/tt-norms-pro-medium.otf') format('otf');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+  }
+
+  .my-box {
+    
+    bottom: 1rem;
+    
+    padding: 1.5rem 3rem;
+    
+	align-items: center;
+	border-radius: 4rem;
+}
+.bg-login{
+	background:#00656b;
+
+}
+
+.column {
+    color: white;
+    padding: 0 15px;
+}
+
+.line {
+    text-align: center;
+	font-size:0.7rem
+}
+
+
+.line:not(:last-child) {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.line:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    width: 20px;
+    border-top: 1px solid white;
+}
+.line:nth-of-type(1)::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;  /*ajuste de acordo com o seu design */
+    transform: translate(-50%, 100%);
+    width: 50%;
+    height: 1px;  /*ajuste de acordo com o seu design */
+    background-color: white;
+}
+.column:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.2); /* 50% de opacidade */
+}
+@media (max-width: 576px) { /* Dispositivos com largura de tela até 576px (sm do Bootstrap 4) */
+    .mobile-padding {
+        padding: 1rem 0; /* Adicione o valor desejado de padding-bottom aqui */
+    }
+	
+	.my-box {
+		padding: 0.7rem 3rem;
+		border-radius: 1rem
+	}
+	.mobile-border-bottom {
+        border-bottom: 1px solid white; /* Adicione a borda desejada aqui */
+    }
+    .mobile-no-border-right {
+        border-right: none !important; /* Remove a borda direita */
+    }
+	.column:nth-of-type(2), .column:nth-of-type(1), .column:nth-of-type(3) {
+		border: none; /* Remove o pseudo-elemento */
+	}
+	.cta-login{
+		display: flex;
+		
+		justify-content: center;
+		position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+	}
+	.cta-login a{
+		padding: 16px 32px;
+		background-color: #fcb962;
+		border-radius: 4rem;
+	}
+	.oxyy-login-register .hero-wrap .hero-bg.hero-bg-scroll{
+		background-image:url('../images/images/mobile.jpg') !important;
+	}
+	.modal-content {
+		width: 80% !important;
+	}
+	
+
+	
+}
+
+@media (min-width: 577px) { /* Dispositivos com largura de tela maior que 576px */
+    .mobile-padding {
+        padding: 0; /* Sem padding-bottom em dispositivos maiores */
+    }
+	.mobile-border-bottom {
+        border-bottom: none; /* Sem borda embaixo em dispositivos maiores */
+    }
+	.cta-login{
+		display: none!important;
+		
+	}
+	.modal p {
+		font-size:1.3rem!important;
+	  }
+	.oxyy-login-register .hero-wrap .hero-bg.hero-bg-scroll{
+		background-image:url('../images/images/mobile-3.jpg')
+
+	}
+}
+
+.modal {
+	color:#fff;
+	justify-content: center!important;
+	align-items: center!important;
+	position: fixed;
+	z-index: 99;
+	left: 0;
+	top: 0;
+	transition: all 0.3s linear;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.4);
+  }
+  .modal p {
+	font-size:1rem;
+  }
+  
+  .modal-content {
+	background-color: #fefefe;
+	
+	margin: auto;
+	background: #00656b;
+	padding: 20px;  
+	width: 40%;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	text-align: center;
+  }
+  
+  
+  .close {
+	color: #ffffff;	
+	font-size: 1rem;
+	font-weight: bold;
+	z-index: 999999;
+	  position: relative;
+	  background-color: #fcb962;
+    border-color: #fcb962;
+    border-radius: 4rem !important;
+	padding: 0.8rem 2.4rem;
+    font-weight: 500;
+	width: 75%;
+    margin: auto;
+	
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+	background-color:#bd935c
+  }
+
+
+
+
+
+
+
+
